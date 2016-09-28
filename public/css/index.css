@@ -1,0 +1,38 @@
+html, body {
+	margin: 0;
+}
+
+.section-1{
+	background-color: #26a69a;
+	background-image: url('/images/seigahia.png');
+	min-height: 400px;
+	position: relative;
+}
+.section-1 #web-title{
+	position: absolute;
+	margin: 0;
+	top: 150px;
+	color: #ffffff;
+}
+.section-1 #web-name{
+	position: absolute;
+	margin: 0;
+	margin-left: 3px;
+	top: 195px;
+	color: #ffffff;	
+}
+.section-1 #web-npm{
+	position: absolute;
+	margin: 0;
+	margin-left: 3px;
+	top: 220px;
+	color: #ffffff;	
+}
+
+.section-2{
+	padding-top: 5vh;
+}
+.section-2 .card-wrapper{
+	max-height: 900px;
+	min-height: 400px;
+}

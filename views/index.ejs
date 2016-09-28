@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 4 | 1306409450	</title>
+
+	 <!-- Compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+	 <link href="/css/icon.css" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+          
+</head>
+<body>
+	<div class="section-1">
+		<div class="container">
+			<h4 id="web-title">Distribution System</h4>
+			<p id="web-name">Edwin Aditya Rahman</p>
+			<p id="web-npm">1306409450</p>
+		</div>
+	</div>
+
+	<div class="section-2">
+		<div class="container">
+			<div class="row">
+				<!-- Loop through array of image -->
+				<% for(var i = 0; i < message.length; i++){ %>
+					<div class="col s4">
+						<div class="card card-wrapper">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="<%= 'data:' + message[i].mime + ';' + 'base64' + ', ' + message[i].isi_berkas%>">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"><%= message[i].asli_berkas %></span>
+								
+		            		</div>
+		            		<div class="card-action">
+             					 <a href="http://152.118.33.94:3000/tugas4/klien/viewImage/<%=message[i].asli_berkas%>">Click for details</a>
+            				</div>
+						</div>	
+					</div> <!-- END OF COL/CARD -->
+					<% } %>
+			</div>
+		</div>
+	</div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+  <script src="/js/materialize.min.js"></script>
+</body>
+</html>
